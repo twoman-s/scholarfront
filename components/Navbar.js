@@ -72,11 +72,11 @@ const Navbar = () => {
             </form>
           </div>
           <div className={styles.navToggle} onClick={handleClick}>
-            <i class="fas fa-chevron-circle-right"></i>
+            <i className="fas fa-chevron-circle-right"></i>
           </div>
         </div>
         <div className={styles.navToggle} onClick={handleClick}>
-          <i class="fas fa-bars"></i>
+          <i className="fas fa-bars"></i>
         </div>
       </div>
     </nav>
