@@ -9,7 +9,7 @@ const CollegesList = ({ colleges }) => {
       {colleges.map((college) => {
         return (
           <>
-            <Link href={`colleges/${college.id}`}>
+            <Link passHref href={`colleges/${college.id}`}>
               <a>{college.name}</a>
             </Link>
             <br />

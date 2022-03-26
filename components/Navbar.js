@@ -32,22 +32,22 @@ const Navbar = () => {
         </div>
         <div className={styles.navMenu} id="nav-menu">
           <ul className={styles.navList}>
-            <Link href="/">
+            <Link passHref href="/">
               <li className={styles.navItem} onClick={handleClick}>
                 Home
               </li>
             </Link>
-            <Link href="/colleges">
+            <Link passHref href="/colleges">
               <li className={styles.navItem} onClick={handleClick}>
                 Colleges
               </li>
             </Link>
-            <Link href="/courses">
+            <Link passHref href="/courses">
               <li className={styles.navItem} onClick={handleClick}>
                 Courses
               </li>
             </Link>
-            <Link href="/checkeligibility">
+            <Link passHref href="/checkeligibility">
               <li
                 className={`${styles.navItem} ${styles.navBtn}`}
                 onClick={handleClick}

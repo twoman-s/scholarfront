@@ -13,10 +13,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Link href="/colleges">
+      <Link passHref href="/colleges">
         <h2>Colleges</h2>
       </Link>
-      <Link href="/courses">
+      <Link passHref href="/courses">
         <h2>Courses</h2>
       </Link>
     </>
