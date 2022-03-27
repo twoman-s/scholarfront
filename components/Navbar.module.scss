@@ -15,6 +15,9 @@
     align-items: center;
     padding: 0 10px;
     position: relative;
+    @include mobile() {
+      padding: 0 20px;
+    }
 
     .logo {
       width: 120px;
@@ -62,6 +65,8 @@
           padding: 10px;
           cursor: pointer;
           font-size: $link-font-size;
+          color: $primary-color;
+          font-weight: 600;
 
           &.navBtn {
             background: green;
@@ -101,6 +106,7 @@
           border: 1px solid #ccc;
           border-radius: 4px;
           outline: none;
+          color: $primary-color;
         }
         button {
           border: none;
@@ -110,6 +116,7 @@
           cursor: pointer;
           i {
             font-size: 24px;
+            color: $primary-color;
           }
         }
       }
@@ -122,6 +129,7 @@
       i {
         font-size: 24px;
         user-select: none;
+        color: $primary-color;
       }
     }
   }
