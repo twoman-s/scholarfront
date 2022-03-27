@@ -27,10 +27,7 @@ const Navbar = () => {
     <nav className={styles.nav}>
       <div className={styles.navbar}>
         <div className={styles.logo}>
-          <Image
-            src="https://www.upgrad.com/_next/image?url=https%3A%2F%2Fupgrad-marketing-platform.s3.amazonaws.com%2Fmpc-v2%2Fassets%2Fimages%2Fupgrad%2Fupgrad-logo.svg&w=128&q=75"
-            alt=""
-          />
+          <Image src="/logo.svg" alt="Scholar" width={120} height={70} />
         </div>
         <div className={styles.navMenu} id="nav-menu">
           <ul className={styles.navList}>
