@@ -40,5 +40,16 @@
         }
       }
     }
+    .detailsContent {
+      position: relative;
+      height: 200px;
+    }
+    .brochureBtn {
+      position: relative;
+      padding: 10px 15px;
+      background: blue;
+      color: #fff;
+      margin-top: 20px;
+    }
   }
 }

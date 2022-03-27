@@ -25,7 +25,12 @@ const CollegeDetail = ({ college }) => {
             return <h1 key={course.id}>{course.name}</h1>;
           })}
         </div>
-        <a href={college.fee_brochure} target="_blank" rel="noreferrer">
+        <a
+          className={styles.brochureBtn}
+          href={college.fee_brochure}
+          target="_blank"
+          rel="noreferrer"
+        >
           Download Fees Brochure
         </a>
       </div>
