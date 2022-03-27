@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import styles from "./Details.module.scss";
 
 const CourseDetail = ({ course }) => {
@@ -5,7 +7,9 @@ const CourseDetail = ({ course }) => {
     <div className={styles.detailsWrapper}>
       <div className={styles.details}>
         <div className={styles.detailsBanner}>
-          <img src="/collegebanner.jpg" alt="banner" />
+          <div className={styles.imgWrapper}>
+            <Image src="/collegebanner.jpg" alt="banner" layout="fill" />
+          </div>
           <div className={styles.detailsHead}>
             <h2>{course.name}</h2>
           </div>
