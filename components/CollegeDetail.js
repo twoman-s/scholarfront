@@ -9,7 +9,7 @@ const CollegeDetail = ({ college }) => {
         <div className={styles.detailsBanner}>
           <div className={styles.imgWrapper}>
             <Image
-              src="/collegeBanner.jpg"
+              src="/collegebanner.jpg"
               alt="banner"
               layout="fill"
               priority
