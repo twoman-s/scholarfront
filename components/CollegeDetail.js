@@ -19,32 +19,18 @@ const CollegeDetail = ({ college }) => {
             <h2>{college.name}</h2>
           </div>
         </div>
+        <div className={styles.detailsContent}>
+          Available Courses
+          {college.courses.map((course) => {
+            return <h1 key={course.id}>{course.name}</h1>;
+          })}
+        </div>
+        <a href={college.fee_brochure} target="_blank">
+          Download Fees Brochure
+        </a>
       </div>
     </div>
   );
 };
-
-{
-  /* <div>
-      <h3>{college.name}</h3>
-      <p>{college.place}</p>
-      <p>{college.address}</p>
-      <p>{college.phone}</p>
-      <p>{college.email}</p>
-      <h2>Courses Available</h2>
-      <ul>
-        {college.courses.map((course) => {
-          return (
-            <li>
-              <p>Name : {course.name}</p>
-              <p>Duration :{course.semesters} semesters</p>
-              <p>Fees :{course.fees.toString()} Rs</p>
-            </li>
-          );
-        })}
-      </ul>
-      <hr />
-    </div> */
-}
 
 export default CollegeDetail;
