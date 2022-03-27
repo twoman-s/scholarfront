@@ -8,7 +8,12 @@ const CourseDetail = ({ course }) => {
       <div className={styles.details}>
         <div className={styles.detailsBanner}>
           <div className={styles.imgWrapper}>
-            <Image src="/collegebanner.jpg" alt="banner" layout="fill" />
+            <Image
+              src="/coursebanner.jpg"
+              alt="banner"
+              layout="fill"
+              priority
+            />
           </div>
           <div className={styles.detailsHead}>
             <h2>{course.name}</h2>
