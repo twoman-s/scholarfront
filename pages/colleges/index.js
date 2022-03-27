@@ -8,12 +8,9 @@ const CollegesList = ({ colleges }) => {
       <h2>Colleges</h2>
       {colleges.map((college) => {
         return (
-          <>
-            <Link passHref href={`colleges/${college.id}`}>
-              <a>{college.name}</a>
-            </Link>
-            <br />
-          </>
+          <Link passHref href={`/colleges/${college.id}`} key={college.id}>
+            <a>{college.name}</a>
+          </Link>
         );
       })}
     </>

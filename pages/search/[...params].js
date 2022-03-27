@@ -39,7 +39,7 @@ export default function SearchResultPage() {
         {searchCollegeResults ? (
           searchCollegeResults.map((college) => {
             return (
-              <Link passHref href={`/colleges/${college.id}`}>
+              <Link passHref href={`/colleges/${college.id}`} key={college.id}>
                 <a>
                   {college.name}
                   <br />
@@ -54,7 +54,7 @@ export default function SearchResultPage() {
         {searchCourseResults ? (
           searchCourseResults.map((course) => {
             return (
-              <Link passHref href={`/courses/${course.id}`}>
+              <Link passHref href={`/courses/${course.id}`} key={course.id}>
                 <a>
                   {course.name}
                   <br />

@@ -7,12 +7,9 @@ const CoursesList = ({ courses }) => {
       <h2>courses</h2>
       {courses.map((course) => {
         return (
-          <>
-            <Link passHref href={`courses/${course.id}`}>
-              <a>{course.name}</a>
-            </Link>
-            <br />
-          </>
+          <Link passHref href={`/courses/${course.id}`} key={course.id}>
+            <a>{course.name}</a>
+          </Link>
         );
       })}
     </>
