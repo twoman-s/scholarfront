@@ -20,14 +20,16 @@ export default function Home() {
         <div className={styles.bannerDetails}>
           <h2>Get your scholarship today</h2>
           <p>We help you to get your dream course at your dream college</p>
+          <div className={styles.bannerBtns}>
+            <Link passHref href="/colleges">
+              <a>Colleges</a>
+            </Link>
+            <Link passHref href="/courses">
+              <a>Courses</a>
+            </Link>
+          </div>
         </div>
       </div>
-      <Link passHref href="/colleges">
-        <h2>Colleges</h2>
-      </Link>
-      <Link passHref href="/courses">
-        <h2>Courses</h2>
-      </Link>
     </>
   );
 }
