@@ -1,5 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import Script from "next/script";
 
 export default class MyDocument extends Document {
   render() {
@@ -17,14 +16,6 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          <Script
-            type="module"
-            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-          />
-          <Script
-            noModule
-            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-          />
         </body>
       </Html>
     );
