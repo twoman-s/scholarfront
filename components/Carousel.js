@@ -42,7 +42,7 @@ const Carousel = () => {
         <div className={styles.slide} data-slide data-active>
           <Image
             src="https://via.placeholder.com/1300x300/0000FF/808080"
-            alt=""
+            alt="placeholder"
             layout="fill"
             objectFit="cover"
           />
@@ -50,7 +50,7 @@ const Carousel = () => {
         <div className={styles.slide} data-slide>
           <Image
             src="https://via.placeholder.com/1300x300/fff888/803080"
-            alt=""
+            alt="placeholder"
             layout="fill"
             objectFit="cover"
           />
@@ -58,7 +58,7 @@ const Carousel = () => {
         <div className={styles.slide} data-slide>
           <Image
             src="https://via.placeholder.com/1300x300/eee666/608080"
-            alt=""
+            alt="placeholder"
             layout="fill"
             objectFit="cover"
           />
@@ -66,7 +66,7 @@ const Carousel = () => {
         <div className={styles.slide} data-slide>
           <Image
             src="https://via.placeholder.com/1300x300/eded45/308080"
-            alt=""
+            alt="placeholder"
             layout="fill"
             objectFit="cover"
           />
