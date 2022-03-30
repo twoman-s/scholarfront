@@ -1,0 +1,43 @@
+@import "./../styles/global";
+
+.courseCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 300px;
+  max-width: 300px;
+  height: 350px;
+  box-shadow: 0px 0px 10px 0px rgba($color: #000000, $alpha: 0.5);
+  overflow: hidden;
+  border-radius: 5px;
+  margin: 10px;
+  .courseImage {
+    position: relative;
+    width: 100%;
+    height: 40%;
+  }
+  .courseName {
+    position: relative;
+    height: 60%;
+    padding: 10px 10px;
+    background: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    line-height: 2;
+    top: -10px;
+    text-align: start;
+    h4 {
+      border-bottom: 1px solid cadetblue;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
+  a {
+    font-weight: 900;
+    width: 100%;
+    border-top: 1px solid cadetblue;
+    padding: 10px 15px;
+    margin: 5px auto;
+  }
+}

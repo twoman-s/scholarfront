@@ -3,7 +3,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["via.placeholder.com", "ik.imagekit.io"],
+    domains: ["via.placeholder.com", "ik.imagekit.io", "res.cloudinary.com"],
   },
 };
 

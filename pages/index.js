@@ -4,11 +4,11 @@ import Image from "next/image";
 
 import styles from "./../styles/Home.module.scss";
 import Carousel from "../components/Carousel";
-import HomeCourse from "../components/HomeCourse";
+import HomeCollege from "../components/HomeCollege";
 
 import { API_PRODUCTION_URL, API_TEST_URL } from "./../utils/apiurls";
 
-export default function Home({ courses }) {
+export default function Home({ mba }) {
   return (
     <>
       <Head>
@@ -35,17 +35,17 @@ export default function Home({ courses }) {
         </div>
       </div>
       <Carousel />
-      <HomeCourse courses={courses.slice(0, 6)} />
+      <HomeCollege colleges={mba} />
     </>
   );
 }
 
 export async function getServerSideProps() {
-  const response = await fetch(`${API_PRODUCTION_URL}getcourses/`);
+  const response = await fetch(`${API_PRODUCTION_URL}search/mba/`);
   const data = await response.json();
   return {
     props: {
-      courses: data,
+      mba: data.colleges,
     },
   };
 }

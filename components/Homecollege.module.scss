@@ -1,0 +1,12 @@
+@import "./../styles/global";
+
+.homeCollegeWrapper {
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  .homeColleges {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+  }
+}
