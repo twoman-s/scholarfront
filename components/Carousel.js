@@ -9,6 +9,7 @@ const Carousel = () => {
   const [carouselSlider, setCarouselSlider] = useState();
   const [slides, setSlides] = useState([]);
   const [size, setSize] = useState();
+  var handle = null;
   const next = () => {
     counter++;
     if (slides && carouselSlider) {
@@ -24,11 +25,18 @@ const Carousel = () => {
     }
   };
 
-  const autoPlay = () => {};
-  setInterval(() => {
-    next();
-  }, 6000);
-
+  const autoPlay = () => {
+    handle = setInterval(() => {
+      next();
+    }, 6000);
+  };
+  const onHover = () => {
+    clearInterval(handle);
+    handle = null;
+  };
+  const onHoverOut = () => {
+    autoPlay();
+  };
   useEffect(() => {
     const cslider = document.querySelector("[data-carouselslider]");
     setCarouselSlider(cslider);
@@ -36,10 +44,26 @@ const Carousel = () => {
     setSlides(islides);
     setSize(islides[0].clientWidth);
   }, []);
+  useEffect(() => {
+    autoPlay();
+  }, [slides]);
+
   return (
-    <div className={styles.carouselWrapper}>
+    <div
+      className={styles.carouselWrapper}
+      onMouseOver={onHover}
+      onMouseLeave={onHoverOut}
+    >
       <div className={styles.carouselSlider} data-carouselslider>
         <div className={styles.slide} data-slide data-active>
+          <Image
+            src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/ab_mba__1648018663354.png"
+            alt="placeholder"
+            layout="fill"
+            objectFit="contain"
+          />
+        </div>
+        <div className={styles.slide} data-slide>
           <Image
             src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/ab_deloitte__1648018465898.png"
             alt="placeholder"
@@ -58,14 +82,6 @@ const Carousel = () => {
         <div className={styles.slide} data-slide>
           <Image
             src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/wharton_dweb__1648188231810.png"
-            alt="placeholder"
-            layout="fill"
-            objectFit="contain"
-          />
-        </div>
-        <div className={styles.slide} data-slide>
-          <Image
-            src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/ab_mba__1648018663354.png"
             alt="placeholder"
             layout="fill"
             objectFit="contain"

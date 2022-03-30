@@ -1,0 +1,13 @@
+@import "./../styles/global";
+
+.homeCourseWrapper {
+  width: 100%;
+  text-align: center;
+  .homeCourses {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
