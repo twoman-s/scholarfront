@@ -41,34 +41,34 @@ const Carousel = () => {
       <div className={styles.carouselSlider} data-carouselslider>
         <div className={styles.slide} data-slide data-active>
           <Image
-            src="https://via.placeholder.com/1300x300/0000FF/808080"
+            src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/ab_deloitte__1648018465898.png"
             alt="placeholder"
             layout="fill"
-            objectFit="cover"
+            objectFit="contain"
           />
         </div>
         <div className={styles.slide} data-slide>
           <Image
-            src="https://via.placeholder.com/1300x300/fff888/803080"
+            src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/ds_ab__1648039243267.png"
             alt="placeholder"
             layout="fill"
-            objectFit="cover"
+            objectFit="contain"
           />
         </div>
         <div className={styles.slide} data-slide>
           <Image
-            src="https://via.placeholder.com/1300x300/eee666/608080"
+            src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/wharton_dweb__1648188231810.png"
             alt="placeholder"
             layout="fill"
-            objectFit="cover"
+            objectFit="contain"
           />
         </div>
         <div className={styles.slide} data-slide>
           <Image
-            src="https://via.placeholder.com/1300x300/eded45/308080"
+            src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/ab_mba__1648018663354.png"
             alt="placeholder"
             layout="fill"
-            objectFit="cover"
+            objectFit="contain"
           />
         </div>
       </div>
