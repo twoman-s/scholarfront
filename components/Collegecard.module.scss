@@ -26,11 +26,15 @@
     line-height: 2;
     top: -10px;
     text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     h4 {
       border-bottom: 1px solid cadetblue;
+      font-size: 18px;
     }
     p {
-      font-size: 13px;
+      font-size: 10px;
     }
   }
   a {

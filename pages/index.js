@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import styles from "./../styles/Home.module.scss";
-import Carousel from "../components/Carousel";
+import Carousels from "../components/Carousel";
 import HomeCollege from "../components/HomeCollege";
 
 import { API_PRODUCTION_URL, API_TEST_URL } from "./../utils/apiurls";
@@ -34,7 +34,7 @@ export default function Home({ mba }) {
           </div>
         </div>
       </div>
-      <Carousel />
+      <Carousels />
       <HomeCollege colleges={mba} />
     </>
   );
