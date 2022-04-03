@@ -1,19 +1,19 @@
-import Link from "next/link";
+import CollegeCard from "../../components/CollegeCard";
+
+import styles from "./../../styles/Colleges.module.scss";
 
 import { API_PRODUCTION_URL, API_TEST_URL } from "../../utils/apiurls";
 
 const CollegesList = ({ colleges }) => {
   return (
-    <>
+    <div className={styles.collegeWrapper}>
       <h2>Colleges</h2>
-      {colleges.map((college) => {
-        return (
-          <Link passHref href={`/colleges/${college.id}`} key={college.id}>
-            <a>{college.name}</a>
-          </Link>
-        );
-      })}
-    </>
+      <div className={styles.collegeList}>
+        {colleges.map((college, index) => {
+          return <CollegeCard key={index} college={college} />;
+        })}
+      </div>
+    </div>
   );
 };
 export default CollegesList;

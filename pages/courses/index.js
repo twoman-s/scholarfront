@@ -1,20 +1,21 @@
 import Link from "next/link";
+import CourseCard from "../../components/CourseCard";
+
 import { API_PRODUCTION_URL, API_TEST_URL } from "../../utils/apiurls";
+
+import styles from "./../../styles/Courses.module.scss";
 
 const CoursesList = ({ courses }) => {
   return (
     <>
-      <h2>courses</h2>
-      {courses.map((course) => {
-        return (
-          <Link passHref href={`/courses/${course.id}`} key={course.id}>
-            <a>
-              {course.name}
-              <br />
-            </a>
-          </Link>
-        );
-      })}
+      <div className={styles.courseWrapper}>
+        <h2>Our Courses</h2>
+        <div className={styles.courseList}>
+          {courses.map((course) => {
+            return <CourseCard course={course} />;
+          })}
+        </div>
+      </div>
     </>
   );
 };

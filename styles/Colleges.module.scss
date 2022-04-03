@@ -1,0 +1,18 @@
+@import "./global";
+
+.collegeWrapper {
+  width: 100%;
+  position: relative;
+  padding: 2rem;
+  h2 {
+    font-size: $heading-font-size;
+    text-align: center;
+  }
+  .collegeList {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}

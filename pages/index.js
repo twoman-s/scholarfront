@@ -8,7 +8,7 @@ import HomeCollege from "../components/HomeCollege";
 
 import { API_PRODUCTION_URL, API_TEST_URL } from "./../utils/apiurls";
 
-export default function Home({ mba }) {
+export default function Home({ mba, carousels }) {
   return (
     <>
       <Head>
@@ -34,18 +34,21 @@ export default function Home({ mba }) {
           </div>
         </div>
       </div>
-      <Carousels />
+      <Carousels carousels={carousels} />
       <HomeCollege colleges={mba} />
     </>
   );
 }
 
 export async function getServerSideProps() {
-  const response = await fetch(`${API_PRODUCTION_URL}search/mba/`);
-  const data = await response.json();
+  const collegeResponse = await fetch(`${API_PRODUCTION_URL}search/mba/`);
+  const carouselResponse = await fetch(`${API_PRODUCTION_URL}getcarousels/`);
+  const collegeData = await collegeResponse.json();
+  const carouselData = await carouselResponse.json();
   return {
     props: {
-      mba: data.colleges,
+      mba: collegeData.colleges,
+      carousels: carouselData,
     },
   };
 }

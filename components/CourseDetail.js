@@ -21,12 +21,6 @@ const CourseDetail = ({ course }) => {
         </div>
       </div>
     </div>
-    // <div>
-    //   <h3>{course.name}</h3>
-    //   <p>{course.fees}</p>
-    //   <p>{course.semesters}</p>
-    //   <hr />
-    // </div>
   );
 };
 
