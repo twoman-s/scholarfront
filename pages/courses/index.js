@@ -11,8 +11,8 @@ const CoursesList = ({ courses }) => {
       <div className={styles.courseWrapper}>
         <h2>Our Courses</h2>
         <div className={styles.courseList}>
-          {courses.map((course) => {
-            return <CourseCard course={course} />;
+          {courses.map((course, index) => {
+            return <CourseCard key={index} course={course} />;
           })}
         </div>
       </div>

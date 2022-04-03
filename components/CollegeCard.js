@@ -14,6 +14,7 @@ const CollegeCard = ({ college }) => {
               : "https://via.placeholder.com/300x150"
           }
           layout="fill"
+          alt={college.name}
         />
       </div>
       <div className={styles.courseName}>
