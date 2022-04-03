@@ -11,13 +11,13 @@ const Carousels = ({ carousels }) => {
     <div className={styles.carouselWrapper}>
       <div className={styles.carouselSlider} data-carouselslider>
         <Carousel>
-          {carousels.map((carousel) => {
+          {carousels.map((carousel, index) => {
             return (
-              <Carousel.Item interval={5000}>
+              <Carousel.Item interval={5000} key={index}>
                 <div className={styles.slide} data-slide data-active>
                   <Image
                     src={carousel.carousel_image}
-                    alt="placeholder"
+                    alt={carousel.carousel_heading}
                     layout="fill"
                     objectFit="cover"
                   />
